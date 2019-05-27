@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Portfolio website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/portfoliowebsite.css">
+	<script type="text/javascript">
+		$(function(){
+    	$(window).on("scroll", function() {
+        	if($(window).scrollTop() > 50) {
+            	$(".header").addClass("active");
+        	} else {
+            	//remove the background property so it comes transparent again (defined in 	your css)
+           	$(".header").removeClass("active");
+        	}
+    	});
+	});
+	</script>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-item-box1">
+			<header class="header">
+				<h1 class="titel">SR</h1>
+				<label for="menutoggle">&#9776;</label>
+				<input type="checkbox" id="menutoggle">
+				<nav class="active">
+					<ul>
+						<li><a href="topicwearables.html">Topic:Wearables</a></li>
+						<li><a href="#">Topic:Playful Interactions</a></li>
+						<li><a href="#">Topic:Artificial Creatures</a></li>
+						<li><a href="#">Topic:AR&VR</a></li>
+						<li><a href="#">Workshop:Arduino</a></li>
+						<li><a href="#">Workshop:VR environments</a></li>
+						<li><a href="#">Workshop: Computer Vision</a></li>
+						<li><a href="#">Excursion</a></li>
+						<li><a href="#">Lab weeks</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="grid-item-box2">
+			<section>
+				<h2 id="welkomsbericht">Human Computer interaction </h2>
+			</section>
+		</div>
+		<div class="grid-item-box3">
+			<div class="content-box1">
+				<img src="img/portret_shantusha.jpg" class="portret_shantusha">
+				<div class="toelichting_mezelf">
+					<p id="tekst2">
+						Hi, ik ben Shantusha Ramsoebhag. Ik ben twintig jaar en volg de opleiding Communicatie en Multimedia Design aan de Haagse Hogeschool. Op het moment volg ik het tweede jaar.<br/><br/>
+						Wat ik het liefst doe:<br/>
+						tekenen, ontwerpen en sporten.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box4">
+			<div class="content-box2">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titelexpectations">My expections</h1>
+				<div class="backgroundexpectations">
+					<p class="tekst">Mijn verwachtingen van dit vak waren dat ik meer te weten zou komen over    verschillende soorten technologiën met betrekking op mijn opleiding. 
+					Daarnaast had ik verwacht veel praktisch te werk te gaan. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box5">
+			<div class="content-box3">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titelgoal">My goal</h1>
+				<div class="backgroundgoal">
+					<p class="tekst goaltekst"> Mijn doelstelling van dit vak was dat ik meer te weten wilden komen over diverse technologiën met betrekking tot CMD. CMD is een brede opleiding, daarbij komen is het handig om...
+					wilde leren tijdens dit vak was dat ik meer te weten wilde komen over verschillende soorten technologiën. Omdat de opleiding CMD een brede opleiding is, was het wel handig om te weten wat er allemaal bij of rondom dit vakgebied hoort.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box6">
+			<footer>
+				<b class="Copyright">&copy;Copyright 2018 Portfolio website Shantusha Ramsoebhag</b>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows:1fr;
+	}		
+
+/*.grid-item-box1{
+	grid-column: 1/3;
+}*/
+
+section{
+	width: 100%;
+	min-height: 174px;
+	background-color: rgb(196, 196, 196, 0.2);
+	background-image: url("../img/backgroundtopic4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-flow: column;
+	}
+
+html{
+	box-sizing: border-fbox;
+	}
+
+header{
+	display: flex;
+	flex-flow: row;
+	background-color: #ffffff;
+	width: 100%;
+	min-height: 56px;
+	padding: 0px;
+	}
+
+.titel{
+	font-size: 28px;
+	color: #000000;
+	font-weight: lighter;
+	text-align: left;
+	top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 3;
+	}
+
+#Topic{
+	width: 100%;
+	min-height:10px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 15px;
+	}
+
+.onderwerpenbox{
+	display: flex;
+	flex-flow: row;
+	margin-top: 120px;
+	}
+
+.backgroundonderwerpbox{
+	margin: auto;
+	width: 97px;
+	height: 92px;
+	background-color: #350223;
+	}
+
+.onderwerpen{
+	min-width: 10px;
+	min-height: 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 35px;
+	}
+
+.boxlink{
+	text-decoration: none;
+	color: white;
+	}
+
+nav ul{
+	position:relative;
+	background-color: #ffffff;
+	list-style: none;
+	top: 56px;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	transition: .5s;
+	}
+
+.active{
+	width: 100%;
+	display: none;
+	}
+
+nav ul li a{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 0.8rem 1rem;
+	}
+
+nav ul li a:hover{
+	font-weight: bold;
+	background-color: #350223;
+	color: #ffffff;
+	}
+
+label{
+	display: block;
+	position: absolute;
+	width: 40px;
+	right: 10px;
+	top: 5px;
+	font-size: 35px;
+	color: #000000;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	z-index: 3;
+	}
+
+label:hover{
+	color: #F8F8F8;
+	transform: rotate(90deg);
+	}
+
+#menutoggle{
+	display: none;
+	position: absolute;
+	width: 20px;
+	height: 10px;
+	}
+
+#menutoggle:checked + .active{
+	display: block;
+	}
+
+.content-box1, .content-box2, .content-box3{
+	display: flex;
+	flex-flow: column;
+	}
+
+.content-box1{
+	min-height: 300px;
+	margin-top: 5px;
+	}
+
+.assignmentsbox{
+	background-color: white;
+	border:7px solid  #696868;
+	flex-flow: column;
+	}
+
+.assignmentsbox, .backgroundresearch, .backgroundreflect{
+	display: flex;
+	flex-flow: column;
+	min-height: 243px; 
+	}
+
+.backgroundreflect{
+	display: flex;
+	flex-flow: column; 
+	min-height:243px; 
+	}
+
+.tekst{
+	margin: auto;
+	width: 300px;
+	min-height: 50px;
+	font-size: 15px;
+	}
+
+.Sub-titelresearch,.Sub-titelreflect, .Sub-titelassignments{
+	font-size: 21px;
+	}
+
+.content-box3{
+	background-color: #350223;
+	}
+
+.reflecttekst, .Sub-titelreflect{
+	color: white;
+	}	
+
+.Sub-titelresearch{
+	width: 160px; 
+	align-self: center;
+	}
+
+.Sub-titelreflect{
+	width: 85px;
+	align-self: center;
+	}
+
+.Sub-titelassignments{
+	width: 150px;
+	align-self: center;
+	color:#696868;
+	}
+
+.Sub-titelresearch, .Sub-titelreflect{
+	margin:15px 0px 15px 0px;
+	}
+
+footer{
+	display: flex;
+	min-width: 100%;
+	height: 66px;
+	color: #000000;
+	background-color: #ffffff;
+	}
+
+.Copyright{
+	align-self: center;
+	margin: auto;
+	font-size: 12px;
+	}
+
+/* Hier komt de code voor Tablet resolutie */
+
+@media only screen and (min-width: 361px){
+	header{
+		height: 63px;
+		}
+
+	.titel{
+		font-size: 30px;
+		width: 100%;
+		}
+
+	section{
+		min-height: 313px;
+		}
+
+	#Topic{
+		font-size: 28px;
+		}
+
+	nav ul{
+		top: 62px;
+	}
+
+	.content-box1{
+		min-height: 310px;
+		}
+
+	.Sub-titelresearch, .Sub-titelreflect{
+	margin:18px 0px 18px 0px;
+		}
+	
+.assignmentsbox, .backgroundresearch, .backgroundreflect{
+		min-height: 330px;	
+		}
+
+	.tekst{
+		font-size: 23px;
+		width: 530px;
+		min-height: 56px;
+		}
+
+	.Sub-titelresearch,.Sub-titelreflect{
+	font-size: 25px;
+		}
+
+}
+
+/*Hier komt de code voor desktop klein resolutie */
+@media only screen and (min-width: 766px){
+
+	.grid-container{
+		grid-template-columns:1fr 1fr 1fr;
+		}
+
+	.grid-item-box1{
+		grid-column:1/4; 
+		grid-row:1;
+		}
+
+	.grid-item-box2{
+		grid-column:1/4; 
+		grid-row:2;
+		}
+
+	.grid-item-box3{
+		grid-column:1/4;
+		grid-row:3;
+		}
+
+	.grid-item-box4{
+		grid-column:1/4;
+		grid-row:4;
+		}
+
+	.grid-item-box5{
+		grid-column: 1/4;
+		grid-row:5;
+		}
+
+	.grid-item-box6{
+		grid-column: 1/4;
+		}
+
+	header{
+		min-height: 70px;
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		}
+
+	.titel{
+		width: 200px;
+		height: 55px;
+		font-size: 30px;
+		text-align: left;
+		left: 0px;
+		top: 0px;
+		padding-top: 15px;
+		}
+
+	section{
+		min-height: 343px;
+		background-color: #EBE8E8;
+		}
+
+	label{
+		display: none;
+		}
+
+	nav ul{
+		width: 100%;
+		flex-direction: row;
+		top: 10px;
+		position: absolute;
+		justify-content: flex-end;
+		z-index: 2;
+		}
+
+	nav ul li a{
+		font-size: 12px;
+		color: black;
+		}
+
+	.active{
+		display: block;
+		}
+
+	#Topic{
+		font-size: 24px;
+		}
+
+	.Sub-titelresearch,.Sub-titelreflect{
+		font-size: 25px;
+		}
+
+	.Sub-titelassignments{
+		width: 180px;
+		}
+	
+	.assignmentsbox, .backgroundresearch, .backgroundreflect{
+		min-height: 188px;
+		min-width: 413px;
+		}
+
+	.tekst{
+		font-size: 18px;
+		width: 800px;
+		margin-bottom: 20px;
+		}
+
+	.grid-item-box3, .grid-item-box4, .grid-item-box5{
+		display: flex;
+		flex-flow: column;
+		}
+
+	.content-box1,.content-box2, .content-box3{
+		width: 1100px;
+		justify-content: center;
+		margin: auto 0px;
+		}	
+
+	/*.Sub-titelresearch, .Sub-titelreflect{
+	margin:20px 0px 20px 0px;
+		}*/
+
+	.grid-item-box5, .grid-item-box3, .grid-item-box4{
+		margin: 0px auto;
+		}
+
+	.backgroundonderwerpbox{
+		width: 300px;
+		height: 200px;
+		}
+
+	.onderwerpen{
+		min-width: 10px;
+		min-height: 10px;
+		font-size: 18px;
+		margin-top: 75px;
+		}
+
+	.split-border {
+		line-height: 0.5;
+		text-align: center;
+		}
+	.split-border span {
+		position: relative; 
+		}
+	.split-border span:before,
+	.split-border span:after {
+		border-top: 1px solid #AEADAE;
+		content: "";
+		position: absolute;
+		width: 20.625em;
+		margin-top: 15px;
+		}
+	.split-border span:before {
+		margin-right: 6.95em;
+		right: 100%;
+		}
+	.split-border span:after {
+		margin-left: 6.95em;
+		}
+
+	#assignment, #reflect{
+		margin-top: 0px;
+		}
+
+	#research{
+		margin-top:0px;
+		width:130px; 
+		}
+
+	.assignmentsbox{
+		padding-top: 40px;
+		margin: auto;
+		margin-top: 50px;
+		}
+
+	.sub-subtitel{
+		margin: 20px 30px 0px 30px;
+		min-height: 5px; 
+		color: #696868;
+		}
+
+	.paars{
+		color: #696868;
+		}
+
+	.content-box2, .content-box3{
+		padding-top: 60px;
+		}
+
+	.conceptenboxfotos{
+		display: flex;
+		flex-flow: row;
+		margin:auto;
+		margin-top:20px;
+		margin-bottom:50px;
+		}
+
+	.laatstetekst{
+		margin-bottom: 30px;
+		}
+
+	.conceptfoto1{
+		width:454px;
+		height:323px;
+		}
+
+	.conceptfoto2{
+		width:454px;
+		height:320px;
+		}
+
+	.conceptfoto3, .conceptfoto4{
+		width:432px;
+		height:307px;
+		}
+
+	.conceptfoto1, .conceptfoto2, .conceptfoto3, .conceptfoto4{
+		margin: 10px 0px 30px 50px;
+		border-bottom: 8px solid #696868;
+		border-top: 8px solid #696868;
+		margin-bottom: 40px;
+		margin-top: 20px;
+		}
+}
+
+/*Hier komt de code voor desktop groot resolutie */
+@media only screen and (min-width: 1367px){
+
+	.grid-container{
+		grid-template-columns:1fr 1fr 1fr;
+		}
+
+	.grid-item-box1{
+		grid-column:1/4; 
+		grid-row:1;
+		}
+
+	.grid-item-box2{
+		grid-column:1/4; 
+		grid-row:2;
+		}
+
+	.grid-item-box6{
+		grid-column: 1/4;
+		}
+
+	.titel{
+		font-size: 35px;
+		}
+	
+	section{
+		min-height: 606px;
+		}
+
+	#Topic{
+		font-size: 45px;
+		}
+
+	.Sub-titelresearch,.Sub-titelreflect, .Sub-titelassignments{
+		font-size: 28px;
+		}
+
+.assignmentsbox, .backgroundreflect, .backgroundresearch{
+		min-height: 288px;
+		min-width: 413px;
+		}
+
+	.tekst{
+		width: 1080px;
+		margin-top: 0px;
+		}
+
+	.content-box1,.content-box2, .content-box3{
+		width: 1635px;
+		min-height: 352px;
+		}	
+
+	/*.Sub-titelresearch, .Sub-titelreflect{
+		margin:20px 0px 20px 0px;
+		}*/
+
+	.Sub-titelresearch{
+		width: 220px;
+		}
+
+	.Sub-titelreflect{
+		width: 100px;	
+		}
+
+	.content-box2, .content-box3{
+		padding-top: 40px;
+		}
+}

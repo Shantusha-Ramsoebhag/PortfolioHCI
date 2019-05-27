@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Workshop: Arduino</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/workshoparduino.css">
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-item-box1">
+			<header>
+				<h1 class="titel">SR</h1>
+				<label for="menutoggle">&#9776;</label>
+				<input type="checkbox" id="menutoggle">
+				<nav class="active">
+					<ul>
+						<li><a href="topicwearables.html">Topic:Wearables</a></li>
+						<li><a href="#">Topic:Playful Interactions</a></li>
+						<li><a href="#">Topic:Artificial Creatures</a></li>
+						<li><a href="#">Topic:AR&VR</a></li>
+						<li><a href="#">Workshop:Arduino</a></li>
+						<li><a href="#">Workshop:VR environments</a></li>
+						<li><a href="#">Workshop: Computer Vision</a></li>
+						<li><a href="#">Excursion</a></li>
+						<li><a href="#">Lab weeks</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="grid-item-box2">
+			<section>
+				<h2 id="Topic">Workshop: Arduino</h2>
+			</section>
+		</div>
+		<div class="grid-item-box3">
+			<div class="content-box1">
+				<div class="assignmentsbox">
+					<div class="split-border"><span></span></div>
+					<h1 class="Sub-titelassignments" id="assignment">Assignment
+					</h1>
+					<h4 class="tekst sub-subtitelopdr">De opdracht</h4>
+					<p class="tekst paars">De opdracht ging over het leren werken met Arduino. Arduino is een elektronisch platform voor het bouwen van prototypes. Bij het gebruik van Arduino is er een micro-controller en software programma nodig. De micro-controller wordt gebruikt voor besturen van elektronische apparaten en de software programma zorgde ervoor dat er gecodeerd kon worden. 
+					<br/>
+					<br/>
+					Door deze opdrachten uit te voeren kreeg ik ervaring in het verbinden van elektronica aan micro-controllers en leerde ik te programmeren. Dit was een goede oefening voor de HCI-lab weken.  
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box4">
+			<div class="content-box2">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht3">Opdracht 3</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">De opdracht “Blink multiple LEDs” ging over het verbinden van twee LED’s aan het circuit. In deze opdracht moest de code versimpeld worden, zodat het ook gemakkelijker te lezen was. Zo werd de variabele “LED-BULLETIN” veranderd in “13”. Het nummer slaat op de pin waar een weerstandsdraad in moest. Op deze manier konden meerdere weerstandsdraden van elkaar gescheiden worden.
+				<br/>Door het circuit na te maken. Kon het licht worden beinvloed door middel van code. Zo had ik bij opdracht 3C ervoor gezorgd dat het groene lichtje twee keer zo snel knipperde dan het gele lichtje.
+				Dat deed ik door in de "void loop" de gegevens van pin 13 twee keer achter elkaar te plaatsen met dezelfde waardes. De waardes van een keer branden is namelijk "HIGH" en "LOW" <br/> 
+				Vervolgens heb ik pin 12 daarna geplaats met een hogere delay, zodat het gele lampje langer zou branden.
+				</p>
+				<div class="beeldmateriaal">
+					<img src="video/opdracht3C.gif" class="gif gifopdr3">
+					<img src="img/opdracht3c.PNG"
+					class="fotos">
+				</div>
+			</div>
+		</div>
+			<div class="grid-item-box5">
+			<div class="content-box3">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 4c</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+					Deze opdracht ging over de helderheid van lichtjes. De helderheid van lichtjes kon worden aangepast met de “analogWrite()” functie. De volledige helderheid was dan 255 en wanneer de lichtjes uit zijn dan was de helderheid 0. <br/>
+					De pins die ik hiervoor gebruikte was pin nummer 9 en 10. Dit omdat deze pins geschikt waren om de lichtjes een dim effect te geven. 
+					Voor deze opdracht moest een LED langzaam aangaan en de andere langzaam uitgaan. Met het “fade” effect. <br/>
+					Om dit te realiseren had ik vijf variabelen aangemaakt. Twee variabelen voor iedere pin en twee om de helderheid aan te geven. Waarbij de ene helderheid een variabele heeft van 255 en de ander 0.  Om ervoor te zorgen dat het licht langzaam komt en gaat heb ik een fadeamount variabele gebruikt. 
+					Ik heb een if-statenment gebruikt, waarin ik aangaf dat wanneer pin 10 “0” of “255” is, hij langzaam uitgaat. Ditzelfde had ik ook aangegeven voor pin 9. Alleen had ik in de code aangegeven dat pin 9 begint bij 255 in plaats van 0.
+				</p>
+				<div class="beeldmateriaal">
+					<img src="video/opdracht4C.gif" class="gif gifopdr4">
+					<img src="img/opdracht4c.PNG"
+					class="fotos" id="foto_opdracht4">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box6">
+			<div class="content-box4">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 6c</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+				In deze opdracht was het de bedoeling om hetzelfde effect te krijgen als bij de vorige opdracht, dus langzaam aan en uit “faden”. Hierbij was het de bedoeling om dit effect te krijgen met een potentiometer. 
+				<br/>
+				Ik heb in de code een variabelen aangegeven met een formule erin, namelijk “sensorValue = (sensorValue/1023) *255”. Deze formule zorgde ervoor dat de sensor waarde geschaald wordt naar 0-255 in plaats van 0-1023. Dit was van belang, zodat de LED lichtjes de juiste waardes konden aannemen wanneer de potentiometer werd gebruikt.<br/>
+				In de code heb ik aangegeven dat de waarde begint met 0. Vervolgens heb ik een “map ()” functie gebruikt. In deze map functie waren er 4 cijfers nodig om de waardes van het licht te bepalen. De eerste en derde cijfer bepaalde de waardes van de ondergrens van het doelbereik of huidige bereik. De tweede en vierde cijfer bepaalde dezelfde waardes, maar dan voor de bovengrens. Om de ene pin uit te laten “faden”, wanneer je aan de potentiometer draait, heb ik bij pin 10 de waardes geleid naar 255. Dit zodat pin 10 aan begint en door middel van de map functie uitgaat. 
+				</p>
+				<div class="beeldmateriaal">
+					<img src="video/opdracht6C.gif" class="gif gifopdr6">
+					<img src="img/opdracht6c.PNG"
+					class="fotos" id="foto_opdracht6">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box7">
+			<div class="content-box5">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 7</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+				Opdracht 7 ging over het laten reageren van licht door middel van een LDR (Light Dependent Resistor). Deze sensor meet de hoeveelheid licht dat op de sensor valt. Het doel van de opdracht was om de sensor te laten reageren op de hoeveelheid licht dat binnenkomt, op basis hiervan zou het lichtje moeten “faden”. De code geeft aan hoe de ene LED voorzichtig in “fade” op het aantal licht dat er binnenkomt en de ander uit “fade”. Om dit effect te krijgen had ik bij het groene lichtje “250-val” gezet, zodat het lichtje aan begint. Bij het gele lichtje had ik “150+val” gezet, zodat het gele lichtje uitgaat. 
+				Ik had nog een test gedaan met de lichtjes. Bij deze test moesten beide lichtjes tegelijk reageren op de hoeveelheid licht. Om dit te bereiken had ik de 150 en 250 waardes voor de val weggelaten. 
+ 
+				</p>
+				<div class="beeldmateriaal">
+					<!--<div class="beeld_box">-->
+						<img src="video/opdracht7.gif" class="gif gifopdr7">
+						<img src="img/opdracht7.PNG"
+						class="fotos" id="foto_opdracht7">
+						<img src="video/opdracht7.2.gif" class="gif gifopdr7">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box8">
+			<div class="content-box6">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 8</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+					In opdracht 8 werkte ik met sensoren. Het ging hierbij om een circuit met twee licht sensoren in plaats van weerstanden. De vraag die gesteld werd was wat er zou het circuit meten met deze sensoren?
+					Als beide sensoren LDR’s zijn dan zouden beide sensoren reageren op de hoeveelheid licht dat binnenkomt. Het licht zal dus veel minder zijn, omdat het nooit de uiterste waardes zou behalen. 
+					Bij het hebben van twee variabelen neem ik aan dat deze twee variabelen lineair veranderen, dus zal er geen verschil zijn bij de uitkomsten. 
+					Dit kan je terugzien door de volgende formule te gebruiken:  
+				</p>
+				<img src="img/opdracht8_formule.PNG" id="formulepic" class="fotos">
+				<p class="tekst">Bij donker en licht situatie:
+				Bij het hebben van twee variabelen neem ik aan dat deze twee variabelen lineair veranderen en zal de uitkomst bij beide situaties, in dit geval donker en licht, niet veranderen. Aan de andere kant 
+				<br/>
+				Bij een situatie waarin een LDR in het donker zit en een in het licht dan is de V output of helemaal aan 5 of helemaal uit 0. 
+				</p>
+				<div class="formulebox">
+					<div class="formules">
+						<p class="tekst formuletekst">Formule beide donker:
+						</p>
+						<img src="img/formule1.jpeg"
+						class="formule_standaard" id="formule1">
+						<p class="tekst formuletekst">Formule beide licht:
+						</p>
+						<img src="img/formule2.jpeg"
+						class="formule_standaard" id="formule2">
+					</div>
+					<div class="formulebox">
+						<div class="formules formule2box">
+						<p class="tekst formuletekst">Formule een donker en een licht:
+						</p>
+						<img src="img/formule3.jpeg"
+						class="formule_standaard" id="formule3">
+						<img src="img/formule4.jpeg"
+						class="formule_standaard" id="formule4">
+						</div>
+					</div>
+				</div>
+				<div class="beeldmateriaal">
+					<img src="video/opdracht8.gif" class="gif gifopdr8">
+					<p class="tekst video_uitlegformule">
+						Na de formules berekend te hebben en het circuit getest te hebben, kwamen er op de serial monitor hoge waardes uit. Hierbij was er wel verschil tussen licht en donker, maar de waardes waren niet gelijk aan de waardes van de formules.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box9">
+			<div class="content-box7">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 9b</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+				In deze opdracht heb ik gewerkt met Arduino en Processing. Het doel van de opdracht was om een vorm te creëren en deze vorm in een interessante manier te tonen. Om dat voor elkaar te krijgen heb ik een “rect” functie toegevoegd, zodat de vorm een vierkant werd in plaats van een cirkel. Daarnaast heb ik de kleur en achtergrond aangepast door de “background()” een waarde te geven van 300 en de “fill()” een waarde van 255, 180, 300. <br/>
+				Om de vierkant een radius te geven heb ik in de rect functie de waarde 52 toegevoegd. Ook heb ik een float(-100) toegevoegd. Dit maakt dat de vorm als een streepje te zien was, bij weinig licht, en een rechthoek bij meer licht.  
+				Wanneer er licht via de sensor binnenkwam werden de vormen groter en wanneer er minder licht via de sensor binnenkwam werden de vormen kleiner.
+				</p>
+				<div class="beeldmateriaal">
+					<img src="video/opdracht9B-_2_.gif" class="gif gifopdr9">
+					<img src="img/opdracht9B.PNG"
+					class="fotos" id="foto_opdracht9">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box10">
+			<div class="content-box8">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 10f</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+				In deze opdracht heb ik gewerkt met twee knoppen. Het doel van deze opdracht was dat het licht zou branden wanneer een van de knoppen ingedrukt was, maar niet beide knoppen. 
+				Om dit te bereiken had ik een if-statement gemaakt. In deze if-statement heb ik aangegeven dat wanneer de linker of rechter knop ingedrukt wordt het licht aan moet. Als de linker of rechter knop tegelijk of niet wordt ingedrukt dan blijft het licht uit. 
+				In het filmpje is ook te zien dat het licht uitblijft, wanneer ik beide knoppen ingedrukt hield.
+ 
+				</p>
+				<div >
+					<img src="video/opdracht10.gif" class="gif gifopdr10">
+					<img src="img/opdracht10.PNG"
+					class="fotos" id="foto_opdracht10">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box11">
+			<div class="content-box9">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 11b</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+					In opdracht 11 heb ik met een servomotor gewerkt. Dit is een motor die een exacte positie kan aannemen. In de code waren er twee “loops”. In de eerste loop heb ik aangegeven dat servomotor bij bereik van 50 weer terugkeert. In de tweede loop heb ik aangegeven dat als de servomotor kleiner was dan 1 weer terugkeert.
+					Dit zorgde ervoor dat de servomotor nooit verder kon dan de helft. Dat gaf een leuk effect.
+				</p>
+				<div class="beeldmateriaal">
+					<img src="video/opdracht11.gif" class="gif gifopdr11">
+					<img src="img/opdracht11b.PNG"
+					class="fotos" id="foto_opdracht11">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box12">
+			<div class="content-box10">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 12b</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+				In deze opdracht was het de bedoeling om de servomotor te laten reageren op twee knoppen. Hierbij zorgde de ene knop ervoor dat de motor met de klok mee bewoog en de andere knop zorgde ervoor dat de motor tegen de klok in bewoog. Om dit te bereiken had ik een for loop gemaakt waarin ik aangaf dat wanneer de rechter knop ingedrukt was en de motor kleiner was dan 180 de motor met de klok mee bewoog. Wanneer de linkerknop ingedrukt was en de motor groter was dan 0 dan bewoog het tegen de klok in. Dit was aangegeven met de “++”en "-- ". 
+				</p>
+				<div class="beeldmateriaal">
+					<img src="video/opdracht12.gif" class="gif gifopdr12">
+					<img src="img/opdracht12B.PNG"
+					class="fotos" id="foto_opdracht12">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box13">
+			<div class="content-box11">
+				<div class="split-border"><span></span></div>
+				<h1 class="Sub-titel" id="opdracht4">Opdracht 13b</h1>
+				<h4 class="tekst sub-subtitel">De opdracht</h4>
+				<p class="tekst">
+					In de laatste opdracht was het de bedoeling om met behulp van een speaker en code, geluid/muziek te maken. 
+					<br/>
+					Ik heb gekozen voor een melodie dat hoge en lage muzieknoten bevat, zodat ik met verschillende muzieknoten kon oefenen.
+					Zo bevat de melodie een hoge, een lage noot en een noot dat er beetje tussenin zit. 
+				</p>
+				<div class="beeldmateriaal">
+					<video controls class="video">
+  						<source src="video/opdracht13_zelf.mp4" type="video/mp4">
+					</video>
+					<img src="img/opdracht13_3.PNG"
+					class="fotos" id="foto_opdracht13">
+				</div>
+			</div>
+		</div>
+		<div class="grid-item-box14">
+			<footer>
+				<b class="Copyright">&copy;Copyright 2018 Portfolio website Shantusha Ramsoebhag</b>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
