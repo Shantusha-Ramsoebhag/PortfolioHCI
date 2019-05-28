@@ -27,6 +27,11 @@ section{
 	background-position: center;
 	}
 
+.logo{
+	text-decoration: none;
+	color: #000000;
+	}
+
 html{
 	box-sizing: border-box;
 	}

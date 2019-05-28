@@ -27,6 +27,11 @@ section{
 	flex-flow: column;
 	}
 
+.logo{
+	text-decoration: none;
+	color: #000000;
+	}
+
 html{
 	box-sizing: border-fbox;
 	}
@@ -42,7 +47,6 @@ header{
 
 .titel{
 	font-size: 28px;
-	color: #000000;
 	font-weight: lighter;
 	text-align: left;
 	top: 10px;

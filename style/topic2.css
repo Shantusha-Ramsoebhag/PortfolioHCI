@@ -27,6 +27,11 @@ section{
 	flex-flow: column;
 	}
 
+.logo{
+	text-decoration: none;
+	color: #000000;
+	}
+
 html{
 	box-sizing: border-box;
 	}
