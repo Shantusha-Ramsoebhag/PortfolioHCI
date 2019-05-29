@@ -171,6 +171,7 @@ label:hover{
 	display: flex;
 	flex-flow: column;
 	min-height: 243px; 
+	margin:auto;
 	}
 
 .backgroundreflect{
@@ -392,6 +393,14 @@ footer{
 		width: 1100px;
 		justify-content: center;
 		margin: auto 0px;
+		}
+
+	.Arkindgif, .Hondacardpic{
+		width:448px;
+		height:260px;
+		margin: 10px 0px 30px 0px;
+		border-bottom: 8px solid #350223;
+		border-top: 8px solid #350223;
 		}	
 
 	/*.Sub-titelresearch, .Sub-titelreflect{
