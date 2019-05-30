@@ -379,7 +379,7 @@ footer{
 		height:400px;
 		}
 
-	.opdrbanaanbox{
+	.opdrbanaanbox, .opdrkubusengamebox{
 		display: flex;
 		flex-flow: column;
 		}
@@ -410,7 +410,7 @@ footer{
 		height:400px;
 		}
 
-	.beeldmateriaal{
+	.beeldmateriaal, .kubusgamefotobox{
 		margin-top: 30px;
 		display: flex;
 		flex-flow: row;
@@ -586,6 +586,69 @@ footer{
 		color: white;
 		}
 
+		.spelerpionpic{
+		width:504.79px;
+		height:400px;
+		}
+
+		.camera1pic{
+		width:410px;
+		height:286px; 
+		margin-right: 61px;
+		}
+
+		.camera2pic{
+		width:629px;
+		height:286px; 
+		}
+
+		.kubuspic{
+		width: 407px;
+		height:200px;
+		border-bottom: 0px solid #350223;
+		border-top: 10px solid #350223;
+		}
+
+		.gamemodepic{
+		width:407px;
+		height:266px;
+		}
+
+		.playerstartpic{
+		width:545px;
+		height:316px;
+		}
+
+		.playredcubepic{
+		width:485;
+		height:316px;	
+		}
+
+.verbindingenpic{
+		width:770.03px;
+		height:400px; 	
+		}
+
+.verbindingenpic2{
+		width:422.75px;
+		height:400px;	
+		}
+
+.kubusbeweginggif{
+		width:711.46px;
+		height:400px;
+		margin-top: 30px;
+		}
+
+.kubusblokkadegif, .bananenopetengif{
+		width:530px;
+		height:397.5px;
+		}	
+
+.kubusblokkadegif{
+		margin-right: 40px;
+		}
+
 }
 
 /*Hier komt de code voor desktop groot resolutie */
@@ -633,7 +696,16 @@ footer{
 		margin: -3.0em 0 0;
 		}
 
+	.spelerpionpic{
+		width:504.79px;
+		height:400px;
+		border-bottom: 0px solid #350223;
+		border-top: 10px solid #350223;
+		}
 	
-			
+	.gamemodepic{
+		width:407px;
+		height:266px;
+		}
 
 }
