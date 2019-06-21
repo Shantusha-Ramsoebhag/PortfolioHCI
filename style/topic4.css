@@ -90,6 +90,7 @@ header{
 .boxlink{
 	text-decoration: none;
 	color: white;
+	font-size: 25px;
 	}
 
 nav ul{
@@ -337,6 +338,7 @@ footer{
 	section{
 		min-height: 343px;
 		background-color: #EBE8E8;
+		background-image: url("../img/backgroundtopic4.jpg");
 		}
 
 	label{
@@ -475,6 +477,11 @@ footer{
 		padding-top: 60px;
 		}
 
+	.content-box2{
+		margin-top: 50px;
+		margin-bottom: 80px;
+		}
+
 	.conceptenboxfotos{
 		display: flex;
 		flex-flow: row;
@@ -509,6 +516,10 @@ footer{
 		margin-bottom: 40px;
 		margin-top: 20px;
 		}
+
+	.opdr1titel{
+		font-size: 22px;
+		}
 }
 
 /*Hier komt de code voor desktop groot resolutie */
@@ -538,6 +549,8 @@ footer{
 	
 	section{
 		min-height: 606px;
+		background-image: url("../img/backgroundtopic4.2.jpg");
+
 		}
 
 	#Topic{

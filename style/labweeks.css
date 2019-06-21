@@ -20,7 +20,7 @@ section{
 	width: 100%;
 	min-height: 174px;
 	background-color: rgb(196, 196, 196, 0.2);
-	background-image: url("../img/backgroundtopic4.jpg");
+	background-image: url("../img/background_labweek.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
@@ -69,6 +69,11 @@ header{
 	display: flex;
 	flex-flow: row;
 	margin-top: 120px;
+	}
+
+.procesbox{
+	display: flex;
+	flex-flow: row;
 	}
 
 .backgroundonderwerpbox{
@@ -187,7 +192,7 @@ label:hover{
 	font-size: 15px;
 	}
 
-.Sub-titelresearch,.Sub-titelreflect, .Sub-titelassignments{
+.Sub-titelresearch,.Sub-titelreflect, .Sub-titelassignments, .Sub-titelproces{
 	font-size: 21px;
 	}
 
@@ -209,7 +214,7 @@ label:hover{
 	align-self: center;
 	}
 
-.Sub-titelassignments{
+.Sub-titelassignments, .Sub-titelproces{
 	width: 150px;
 	align-self: center;
 	color:#696868;
@@ -283,6 +288,11 @@ footer{
 
 /*Hier komt de code voor desktop klein resolutie */
 @media only screen and (min-width: 766px){
+	
+	.procesbox{
+		width: 1141px;
+		margin: auto;
+		}
 
 	.grid-container{
 		grid-template-columns:1fr 1fr 1fr;
@@ -315,6 +325,75 @@ footer{
 
 	.grid-item-box6{
 		grid-column: 1/4;
+		}
+
+	.Pbox{
+		display: flex;
+		width:116px;
+		height:250px;
+		background-color:#C4C4C4;
+		margin: 5px 5px 5px 5px;
+		flex-flow: column;
+		}
+
+	.Pbox1{
+		background-color: #000000;	
+		}
+
+	.Pbox2{
+		background-color: #0D0109;
+		}
+
+	.Pbox3{
+		background-color: #1B0112;
+		}
+
+	.Pbox4{
+		background-color: #28021A;
+		}
+
+	.Pbox5{
+		background-color: #350223;
+		}
+
+	.Pbox6{
+		background-color: #5D354F;
+		}
+
+	.Pbox7{
+		background-color: #86677B;
+		}
+
+	.Pbox8{
+		background-color: #AE9AA7;
+		}
+
+	.Pbox9{
+		background-color: #D7CCD3;
+		}
+
+	.tekstproces{
+		min-width:10px;
+		min-height: 3px;
+		align-self: left;
+		line-height: 1.4;
+		margin-left: 12px;
+		margin-top: 5px;
+		text-decoration: none;
+		}
+
+	.tekstprocesday{
+		min-width:5px;
+		min-height: 3px;
+		align-self: center;
+		margin-top: 30px;
+		font-size: 50px;
+		text-decoration: none;
+		}
+
+	.procesboxlink{
+		text-decoration: none;
+		color: white;
 		}
 
 	header{
@@ -370,7 +449,11 @@ footer{
 		}
 
 	.Sub-titelassignments{
-		width: 180px;
+		width: 150px;
+		}
+
+	.Sub-titelproces{
+		width: 220px;
 		}
 	
 	.assignmentsbox, .backgroundresearch, .backgroundreflect{
@@ -446,8 +529,21 @@ footer{
 		margin-left: 6.95em;
 		}
 
-	#assignment, #reflect{
+	.split-border2 span:before {
+		margin-right: 8.95em;
+		right: 100%;
+		}
+
+	.split-border2 span:after {
+		margin-left: 8.95em;
+		}
+
+ #reflect{
 		margin-top: 0px;
+		}
+
+	#Proces{
+		margin-bottom: 50px;
 		}
 
 	#research{
@@ -458,21 +554,21 @@ footer{
 	.assignmentsbox{
 		padding-top: 40px;
 		margin: auto;
-		margin-top: 50px;
-		}
-
-	.sub-subtitel{
-		margin: 20px 30px 0px 30px;
-		min-height: 5px; 
-		color: #696868;
+		margin-bottom: 80px;
 		}
 
 	.paars{
 		color: #696868;
+		width: 300px;
 		}
 
 	.content-box2, .content-box3{
 		padding-top: 60px;
+		}
+
+	.content-box1{
+		margin-top: 80px;
+		margin-bottom: 50px;
 		}
 
 	.conceptenboxfotos{
@@ -487,27 +583,66 @@ footer{
 		margin-bottom: 30px;
 		}
 
+	.fotoproductbox{
+		display: flex;
+		flex-flow: row;
+		align-self: center;
+		}
+
 	.conceptfoto1{
-		width:454px;
-		height:323px;
+		width:300px;
+		height:225px;
 		}
 
 	.conceptfoto2{
-		width:454px;
-		height:320px;
+		width:196.51px;
+		height:225px;
 		}
 
-	.conceptfoto3, .conceptfoto4{
-		width:432px;
-		height:307px;
+	.conceptfoto3{
+		width:189.14px;
+		height:225px;
 		}
 
-	.conceptfoto1, .conceptfoto2, .conceptfoto3, .conceptfoto4{
-		margin: 10px 0px 30px 50px;
+	.conceptfoto4{
+		width:226.08px;
+		height:225px;
+		}
+
+	.conceptfoto5{
+		width:146.08px;
+		height:225px;
+		}
+
+	.conceptfoto6{
+		width:168.75px;
+		height:255px;
+		}
+
+	.conceptfoto1, .conceptfoto2, .conceptfoto3, .conceptfoto4, .conceptfoto5, .conceptfoto6{
+		margin: 20px 0px 40px 50px;
 		border-bottom: 8px solid #696868;
 		border-top: 8px solid #696868;
+		}
+
+	.cf1, .cf6{
+		margin-left: 120px;
+	}
+
+	iframe{
+		margin: auto;
+		margin-top: 30px;
 		margin-bottom: 40px;
-		margin-top: 20px;
+		}
+
+	.link{
+		margin-left: 180px;
+		}
+
+	.sub-subtitel{
+		margin: 20px 0px 0px 90px;
+		min-height: 5px; 
+		color: #696868;
 		}
 }
 
@@ -538,13 +673,15 @@ footer{
 	
 	section{
 		min-height: 606px;
+		background-image: url("../img/background_labweek2.jpg");
+
 		}
 
 	#Topic{
 		font-size: 45px;
 		}
 
-	.Sub-titelresearch,.Sub-titelreflect, .Sub-titelassignments{
+	.Sub-titelresearch,.Sub-titelreflect, .Sub-titelassignments, .Sub-titelproces{
 		font-size: 28px;
 		}
 

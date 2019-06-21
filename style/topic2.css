@@ -90,6 +90,7 @@ header{
 .boxlink{
 	text-decoration: none;
 	color: white;
+	font-size: 25px;
 	}
 
 nav ul{
@@ -467,6 +468,11 @@ footer{
 		padding-top: 60px;
 		}	
 
+	.content-box2{
+		margin-top: 50px;
+		margin-bottom: 30px;
+		}
+
 	.conceptt2, .bokszakfotos{
 		display: flex;
 		flex-flow: row;
@@ -548,6 +554,8 @@ footer{
 	
 	section{
 		min-height: 606px;
+		background-image: url("../img/backgroundtopic2.2.jpg");
+
 		}
 
 	#Topic{

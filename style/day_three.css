@@ -16,9 +16,6 @@ section{
 	width: 100%;
 	min-height: 174px;
 	background-color: rgb(196, 196, 196, 0.2);
-	background-image: url("../img/background_excursion.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
 	display: flex;
 	flex-flow: column;
 	}
@@ -232,11 +229,6 @@ footer{
 		grid-row:3;
 		}
 
-	.grid-item-box4{
-		grid-row:4;
-		background-color: #350223;
-		}
-
 	.grid-item-box5{
 		grid-row:5;
 		}
@@ -264,6 +256,13 @@ footer{
 		margin: auto;
 		}
 
+	.grid-item-box4{
+		grid-row:4;
+		background-color: #350223;
+		padding:50px 0px 50px 0px;
+		margin-bottom: 0px;
+		}
+
 	header{
 		min-height: 70px;
 		width: 100%;
@@ -283,7 +282,7 @@ footer{
 
 	section{
 		min-height: 343px;
-		background-color: #EBE8E8;
+		background-color: #1B0112;
 		}
 
 	label{

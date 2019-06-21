@@ -231,15 +231,15 @@ footer{
 		border-top: 1px solid #AEADAE;
 		content: "";
 		position: absolute;
-		width: 9.625em;
+		width: 20.625em;
 		margin-top: 15px;
 		}
 	.split-border span:before {
-		margin-right: 6.50em;
+		margin-right: 7.95em;
 		right: 100%;
 		}
 	.split-border span:after {
-		margin-left: 6.50em;
+		margin-left: 7.95em;
 		}
 
 /* Hier komt de code voor Tablet resolutie */
@@ -287,7 +287,7 @@ footer{
 	.portret_shantusha{
 		width:675px;
 		height: 450px;
-		margin-top: 20px;
+		margin-top: 30px;
 		}
 
 	.Sub-titelexpectations,.Sub-titelgoal{
@@ -429,10 +429,10 @@ footer{
 		margin: auto 0px;
 		border-bottom: 2px solid #BFBFBF;
 		border-top: 2px solid #BFBFBF;
-  		padding: 0 0 10px;;
+  		padding: 0 0 30px;
   		min-width: 1232px;
   		flex-flow: row;
-  		margin-top: 20px;
+  		margin-top: 50px;
 		}	
 
 	/*.Sub-titelexpectations, .Sub-titelgoal{
@@ -441,6 +441,11 @@ footer{
 
 	.grid-item-box3{
 		margin: 0px auto;
+		}
+
+	.goaltekst, .expectionstekst{
+		min-width: 900px;
+		margin-top: 30px;
 		}
 }
 
@@ -486,6 +491,7 @@ footer{
 	
 	section{
 		min-height: 606px;
+		background-image: url("../img/background_home2.png");
 		}
 
 	.header{
@@ -506,7 +512,7 @@ footer{
 		}
 
 	.toelichting_mezelf, .backgroundexpectations, .backgroundgoal{
-		min-height: 288px;
+		min-height: 188px;
 		min-width: 413px;
 		}
 
@@ -521,7 +527,8 @@ footer{
 
 	.content-box2, .content-box3{
 		width: 100%;
-		padding-top:30px;
+		padding-top:50px;
+		padding-bottom: 50px;
 		}
 
 	/*.Sub-titelexpectations, .Sub-titelgoal{

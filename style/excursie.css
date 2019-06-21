@@ -350,7 +350,12 @@ footer{
 
 	#assignment{
 		margin-top: 0px;
+		
 		}	
+
+	.reflect{
+		color: #ffffff;
+		}
 
 	.assignmentsbox{
 		padding-top: 40px;
@@ -401,6 +406,14 @@ footer{
 		margin-left: 30px;
 		margin-bottom: 30px;
 		}
+
+	.grid-item-box4{
+		background-color: #350223;
+		}
+
+	.reflectietekst{
+		color: #ffffff;
+		}
 }
 
 /*Hier komt de code voor desktop groot resolutie */
@@ -412,6 +425,7 @@ footer{
 	
 	section{
 		min-height: 606px;
+		background-image: url("../img/background_excursion2.jpg");
 		}
 
 	#Topic{
